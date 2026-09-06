@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Frederick Dental Suite | Dr. Charles Yun — Family & Cosmetic Dentistry, Frederick MD</title>
+<meta name="description" content="Frederick Dental Suite — family, cosmetic, and emergency dentistry with Dr. Charles Yun. 184 Thomas Johnson Dr, Suite 202, Frederick MD. (301) 663-1747.">
+<link rel="preconnect" href="#">
+<link rel="preconnect" href="#" crossorigin>
+<link href="#" rel="stylesheet">
+<style>
+:root{
+  --sage:#7C9A8E;
+  --sage-deep:#4E6E60;
+  --sage-mist:#EDF2EF;
+  --cream:#FBFAF7;
+  --ink:#22302A;
+  --muted:#6B7A72;
+  --serif:'Fraunces',Georgia,serif;
+  --sans:'Nunito Sans',Helvetica,Arial,sans-serif;
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(251,250,247,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(124,154,142,.18)}
+.nav-inner{max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 32px;gap:20px}
+.nav-brand{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--sage-deep);text-decoration:none;line-height:1.1}
+.nav-brand small{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:2.6px;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:3px}
+.nav-links{display:flex;gap:30px;list-style:none}
+.nav-links a{color:var(--ink);text-decoration:none;font-size:13.5px;font-weight:600;letter-spacing:.4px}
+.nav-links a:hover{color:var(--sage-deep)}
+.nav-cta{background:var(--sage-deep);color:#fff;text-decoration:none;font-size:13px;font-weight:700;padding:13px 24px;border-radius:999px;white-space:nowrap;transition:background .25s}
+.nav-cta:hover{background:var(--ink)}
+@media(max-width:980px){.nav-links{display:none}}
+@media(max-width:520px){.nav-cta{padding:11px 16px;font-size:12px}}
+
+.hero{padding:180px 32px 110px;background:linear-gradient(168deg,var(--sage-mist) 0%,var(--cream) 62%)}
+.hero-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:center}
+@media(max-width:980px){.hero-inner{grid-template-columns:1fr;gap:48px}}
+.hero-eyebrow{display:inline-block;background:rgba(124,154,142,.14);color:var(--sage-deep);font-size:12px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;padding:9px 18px;border-radius:999px;margin-bottom:28px}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(42px,5.4vw,68px);line-height:1.06;letter-spacing:-.8px;color:var(--ink)}
+.hero h1 em{font-style:italic;color:var(--sage-deep)}
+.hero-sub{margin-top:26px;max-width:520px;color:var(--muted);font-size:18.5px;font-weight:300;line-height:1.75}
+.hero-actions{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-size:14px;font-weight:700;padding:17px 32px;border-radius:999px;transition:all .25s}
+.btn-solid{background:var(--sage-deep);color:#fff}
+.btn-solid:hover{background:var(--ink)}
+.btn-soft{background:#fff;color:var(--sage-deep);border:1.5px solid rgba(124,154,142,.4)}
+.btn-soft:hover{border-color:var(--sage-deep)}
+.hero-photo{position:relative}
+.hero-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;border-radius:26px;box-shadow:0 30px 70px rgba(34,48,42,.18)}
+.hero-badge{position:absolute;bottom:-22px;left:-22px;background:#fff;border-radius:18px;padding:20px 26px;box-shadow:0 16px 40px rgba(34,48,42,.14)}
+.hero-badge b{font-family:var(--serif);font-size:22px;color:var(--sage-deep);display:block;line-height:1.2}
+.hero-badge span{font-size:12.5px;color:var(--muted);font-weight:600}
+
+.section{padding:100px 32px}
+.section-inner{max-width:1240px;margin:0 auto}
+.eyebrow{font-size:12px;letter-spacing:3.4px;text-transform:uppercase;color:var(--sage);font-weight:700;margin-bottom:16px}
+.h2{font-family:var(--serif);font-weight:500;font-size:clamp(34px,4.2vw,52px);line-height:1.1;letter-spacing:-.5px;margin-bottom:20px}
+.h2 em{font-style:italic;color:var(--sage-deep)}
+.lede{max-width:620px;color:var(--muted);font-size:17.5px;font-weight:300;line-height:1.8}
+
+/* services */
+.svc-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:60px}
+@media(max-width:980px){.svc-wrap{grid-template-columns:1fr}}
+.svc{background:#fff;border-radius:var(--radius);padding:38px 34px;border:1px solid rgba(124,154,142,.14);transition:box-shadow .3s}
+.svc:hover{box-shadow:0 20px 48px rgba(34,48,42,.10)}
+.svc h3{font-family:var(--serif);font-size:26px;font-weight:600;margin-bottom:18px;color:var(--ink)}
+.svc ul{list-style:none}
+.svc li{font-size:15.5px;color:var(--muted);padding:7px 0;border-bottom:1px solid rgba(124,154,142,.1);font-weight:400}
+.svc li:last-child{border-bottom:none}
+.svc li::before{content:"— ";color:var(--sage);font-weight:700}
+
+/* dr yun */
+.yun{background:var(--sage-mist)}
+.yun-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:76px;align-items:center}
+@media(max-width:980px){.yun-grid{grid-template-columns:1fr;gap:48px}}
+.yun-img img{border-radius:26px;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 15%;box-shadow:0 24px 60px rgba(34,48,42,.16)}
+.mission{background:#fff;border-left:4px solid var(--sage);border-radius:0 var(--radius) var(--radius) 0;padding:30px 34px;margin:28px 0}
+.mission p{font-family:var(--serif);font-size:20.5px;font-style:italic;color:var(--ink);line-height:1.55}
+.yun-facts{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px}
+.yun-fact{background:#fff;border-radius:14px;padding:20px 24px}
+.yun-fact b{display:block;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--sage);font-weight:700;margin-bottom:6px}
+.yun-fact span{font-size:15px;color:var(--muted);font-weight:400;line-height:1.55}
+
+/* concerns */
+.concern-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:56px}
+@media(max-width:980px){.concern-wrap{grid-template-columns:1fr}}
+.concern{border-radius:var(--radius);padding:36px 32px;background:linear-gradient(160deg,#fff,var(--sage-mist));border:1px solid rgba(124,154,142,.16)}
+.concern h3{font-family:var(--serif);font-size:24px;font-weight:600;margin-bottom:12px}
+.concern p{font-size:15px;color:var(--muted);font-weight:300;line-height:1.7}
+
+/* visit */
+.visit{background:var(--ink);color:var(--cream)}
+.visit .h2{color:var(--cream)}
+.visit .h2 em{color:#A8C4B6}
+.visit .eyebrow{color:#A8C4B6}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;margin-top:56px}
+@media(max-width:980px){.visit-grid{grid-template-columns:1fr;gap:44px}}
+.visit-block{margin-bottom:34px}
+.visit-block h3{font-size:11.5px;letter-spacing:3px;text-transform:uppercase;color:#A8C4B6;font-weight:700;margin-bottom:10px}
+.visit-block p{font-family:var(--serif);font-size:21px;color:var(--cream);line-height:1.5}
+.visit-block a{text-decoration:none}
+.visit-block a:hover{color:#A8C4B6}
+.hours-table{width:100%;border-collapse:collapse}
+.hours-table td{padding:10px 0;border-bottom:1px solid rgba(251,250,247,.12);font-size:15.5px;color:rgba(251,250,247,.85)}
+.hours-table td:last-child{text-align:right;color:rgba(251,250,247,.6)}
+.map-frame{width:100%;height:100%;min-height:400px;border:none;border-radius:var(--radius)}
+.visit-cta{margin-top:40px}
+
+.footer{background:var(--ink);color:rgba(251,250,247,.55);padding:44px 32px;border-top:1px solid rgba(251,250,247,.1)}
+.footer-inner{max-width:1240px;margin:0 auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px}
+.footer a{color:#A8C4B6;text-decoration:none;font-weight:700}
+.credit{font-size:12px;letter-spacing:1.2px;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top">Frederick Dental Suite<small>Dr. Charles Yun, DDS</small></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#dr-yun">Dr. Yun</a></li>
+      <li><a href="#concerns">Concerns</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="nav-cta" href="#">(301) 663-1747</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-eyebrow">Family · Cosmetic · Emergency Dentistry</span>
+      <h1>Dentistry that sends you home <em>smiling.</em></h1>
+      <p class="hero-sub">We know how important a great smile is to looking and feeling good. Dr. Charles Yun and our Frederick team are committed to the highest quality in family and cosmetic dentistry — with today's latest technology, and a staff that makes every visit affordable and comfortable.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#visit">Request an Appointment</a>
+        <a class="btn btn-soft" href="#">Call (301) 663-1747</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/dr-yun-sm.jpg" alt="Dr. Charles Yun, Frederick dentist">
+      <div class="hero-badge">
+        <b>"Be the reason someone smiles today."</b>
+        <span>— Dr. Charles Yun</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="services">
+  <div class="section-inner">
+    <p class="eyebrow">Dental Services</p>
+    <h2 class="h2">One practice for <em>every smile</em> in the family.</h2>
+    <p class="lede">From routine checkups to full smile makeovers, our practice offers a wide variety of procedures to uniquely fit your needs.</p>
+    <div class="svc-wrap">
+      <div class="svc">
+        <h3>General &amp; Family</h3>
+        <ul>
+          <li>Family Dentistry</li>
+          <li>Emergency Dentistry</li>
+          <li>Emergency Extractions</li>
+          <li>Night Guards</li>
+          <li>Periodontal Therapy</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <h3>Cosmetic</h3>
+        <ul>
+          <li>Teeth Whitening</li>
+          <li>Invisalign</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <h3>Restorative</h3>
+        <ul>
+          <li>Dental Bridges</li>
+          <li>Implant Crowns</li>
+          <li>Dental Crowns</li>
+          <li>Dentures &amp; Partials</li>
+          <li>Dental Implants</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section yun" id="dr-yun">
+  <div class="section-inner">
+    <div class="yun-grid">
+      <div class="yun-img"><img src="img/dr-yun-sm.jpg" alt="Dr. Charles Yun"></div>
+      <div>
+        <p class="eyebrow">Meet Dr. Yun</p>
+        <h2 class="h2">Dr. Charles Yun — <em>your Frederick dentist.</em></h2>
+        <p class="lede">Dr. Yun is committed to excellence in dentistry and uses the latest techniques to give you a beautiful, healthy smile. He believes strongly in education — preventing oral health problems before they occur — and makes sure every patient leaves fully informed about their dental health.</p>
+        <div class="mission">
+          <p>"To make every patient who leaves the practice leave with a smile on his or her face. I will provide exceptional dental care and treat everyone as I would my own family."</p>
+        </div>
+        <div class="yun-facts">
+          <div class="yun-fact"><b>Education</b><span>BS Biology, UMBC · Doctor of Dental Surgery, University of Maryland School of Dentistry</span></div>
+          <div class="yun-fact"><b>Life &amp; Hobbies</b><span>Time with his wife and 3 children, singing, cycling, soccer, overlanding — and volunteering at local dental and church events.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="concerns">
+  <div class="section-inner">
+    <p class="eyebrow">Dental Concerns</p>
+    <h2 class="h2">Whatever brought you here, <em>we can help.</em></h2>
+    <div class="concern-wrap">
+      <div class="concern"><h3>Bleeding Gums</h3><p>Healthy gums shouldn't bleed. We diagnose the cause and provide periodontal therapy to get you back on track.</p></div>
+      <div class="concern"><h3>Missing Teeth</h3><p>From dental implants to bridges, dentures, and partials — modern restorative options that look and feel natural.</p></div>
+      <div class="concern"><h3>Teeth Grinding</h3><p>Custom night guards protect your teeth and ease jaw strain while you sleep.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section visit" id="visit">
+  <div class="section-inner">
+    <p class="eyebrow">Visit Us</p>
+    <h2 class="h2">Your first step toward a beautiful smile <em>starts here.</em></h2>
+    <div class="visit-grid">
+      <div>
+        <div class="visit-block"><h3>Office</h3><p>Frederick Dental Suite<br>184 Thomas Johnson Dr, Suite 202<br>Frederick, MD 21702</p></div>
+        <div class="visit-block"><h3>Phone</h3><p><a href="#">(301) 663-1747</a></p></div>
+        <div class="visit-block"><h3>Email</h3><p style="font-size:17px"><a href="#">contact@frederickdentalsuite.com</a></p></div>
+        <div class="visit-block"><h3>Hours</h3>
+          <p style="font-size:17px;font-family:var(--sans);color:rgba(251,250,247,.8)">Call or email for current office hours and same-week availability — emergency cases are seen promptly.</p>
+        </div>
+        <div class="visit-cta"><a class="btn btn-solid" href="#">Call to Schedule</a></div>
+      </div>
+      <div>
+        <div style="display:flex;align-items:center;justify-content:center;min-height:200px;background:#e7e5e4;color:#57534e;font-family:sans-serif;border-radius:8px">Map preview disabled in concept build</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>&copy; 2026 Frederick Dental Suite · 184 Thomas Johnson Dr, Suite 202, Frederick, MD 21702 · (301) 663-1747</span>
+    <span class="credit">Concept redesign by <a href="https://digital-ethnicity.com/" target="_blank" rel="noopener">Digital Ethnicity</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
